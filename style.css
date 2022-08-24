@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+#grid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  justify-content: center;
+  background-color: coral;
+}
+
+.grid-item {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.grid-item:hover {
+  background-color: rgb(223, 223, 223);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
